@@ -626,6 +626,13 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.packages-heading {
+    margin-top: 3rem; /* Moves the heading down */
+    text-align: center; /* Keeps it centered */
+    font-size: 2rem; /* Optional: Adjust the size */
+    font-weight: bold; /* Optional: Keep it bold */
+}
+
 .packages-section {
     padding: 2rem;
     text-align: center;
