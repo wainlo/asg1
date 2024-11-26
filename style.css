@@ -168,12 +168,7 @@ nav {
     background: linear-gradient(135deg, #ffffff, #f2f1ff)
 }
 
-.all-in-one-section img {
-    width: 40vw;
-    height: 30vw;
-    background-color: purple;
-    border-radius: 10px;
-}
+
 
 .all-in-one-content {
     display: flex;
