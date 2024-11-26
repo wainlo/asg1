@@ -204,6 +204,33 @@ nav {
     padding: 0.6vw 1.5vw;
     display: inline-block;
 }
+.button-group {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.all-in-one-button,
+.study-resources-button {
+    text-decoration: none;
+    background-color: #ffffff; /* White background for contrast */
+    color: #ff4081; /* Button text color matches border */
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #ff4081; /* Add border */
+    border-radius: 10px; /* Rounded corners for buttons */
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.all-in-one-button:hover,
+.study-resources-button:hover {
+    background-color: #ff4081; /* Fill background on hover */
+    color: white; /* Change text color to white */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
 
 /* Keep existing animation keyframes */
 @keyframes slideUpTitleScale {
