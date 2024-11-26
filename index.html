@@ -1,58 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waine Digital Solutions</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindQuest</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="nav-btn">
+            <a href="#">Courses</a>
+            <a href="#">Quizzes</a>
+            <a href="#">About Us</a>
+            <a href="#">Credits</a>
+        </div>
+    </nav>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Welcome to Waine Digital Solutions</h1>
-    <p>Your partner in digital transformation</p>
-    <button onclick="showPromo()">Claim Your First-Time Discount</button>
-  </header>
+    <section class="wishlist-section">
+        <img src="images/programming-img.png" alt="">
+        <div class="wishlist-content">
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service">
-      <h3>Web Development</h3>
-      <p>Building responsive, user-friendly websites tailored to your needs.</p>
-    </div>
-    <div class="service">
-      <h3>Digital Marketing</h3>
-      <p>Helping you reach the right audience with SEO, social media, and more.</p>
-    </div>
-    <div class="service">
-      <h3>Brand Strategy</h3>
-      <p>Creating a strong, recognizable brand for your business.</p>
-    </div>
-  </section>
+            <div class="wishlist-title">
+                <h1>GROW. LEARN. WAINE.</h1>
+                <p>Join the wishlist to learn for free with MindQuest!</p>
+            </div>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>Testimonials</h2>
-    <p>"Waine Digital transformed our online presence!" - A Happy Client</p>
-  </section>
+            <!-- Wishlist Form -->
+            <form class="wishlist-form" onsubmit="handleWishlistSubmit(event)">
+                <div class="email-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="notification-group">
+                    <input type="checkbox" id="notification" required>
+                    <label for="notification">I would like to receive email notification when MindQuest app is out *</label>
+                </div>
+                <button type="submit" class="confirm-button">Join Wishlist</button>
+            </form>
 
-  <!-- Promo Section -->
-  <section class="promo">
-    <h2>Enter Promo Code</h2>
-    <input type="text" id="promoCode" placeholder="Enter your code">
-    <button onclick="applyPromo()">Apply</button>
-    <p id="promoResult"></p>
-  </section>
+            <div class="divider-group">
+                <hr>
+                <span>Please <strong>sign in</strong> to get access to online study resources via</span>
+                <hr>
+            </div>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Phone: +65 1234 5678</p>
-    <p>Email: wainedigital@email.com</p>
-  </section>
+            <button id="google-signup">
+                <img src="images/google-g.png" alt="">
+                Google
+            </button>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="all-in-one-section">
+        <div class="img-placeholder"></div>
+        <div class="all-in-one-content">
+            <h1>YOUR STUDY TOOL KIT,<br>ALL IN ONE PLACE</h1>
+            <p>Discover a wide range of resources, from AI tools to past papers and study guides. Everything you need to excel is right here, ready to support your learning journey.</p>
+            <div class="tags">
+                <div class="one-tag1">All-In-One</div>
+                <div class="one-tag2">Study Resources</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="track-record">
+        <div class="track-content">
+            <h1>Why Choose MindQuest?</h1>
+            <p>Over 10,000 learners have excelled using MindQuest's tools and resources. See what our users are saying:</p>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"MindQuest transformed my study routine. I achieved top grades!"</p>
+                    <span>- Sarah L., High School Student</span>
+                </div>
+                <div class="testimonial">
+                    <p>"The resources are so well-organized and easy to use."</p>
+                    <span>- John D., University Graduate</span>
+                </div>
+                <div class="testimonial">
+                    <p>"A must-have tool for anyone serious about learning."</p>
+                    <span>- Emma W., Lifelong Learner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1>Our Services</h1>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>AI-Powered Tools</h3>
+                <p>Enhance your learning with AI-driven study resources and insights.</p>
+            </div>
+            <div class="service-item">
+                <h3>Comprehensive Study Guides</h3>
+                <p>Access a library of expertly curated study materials and past papers.</p>
+            </div>
+            <div class="service-item">
+                <h3>Interactive Quizzes</h3>
+                <p>Test your knowledge and prepare for exams with interactive quizzes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <h1>Have a Promo Code?</h1>
+        <div class="promo-input">
+            <input type="text" id="promo-code" placeholder="Enter promo code">
+            <button onclick="applyPromo()">Apply</button>
+        </div>
+        <p id="promo-message" style="color: green; font-size: 1rem; margin-top: 1rem;"></p>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: support@mindquest.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

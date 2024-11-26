@@ -1,17 +1,58 @@
-// Display a welcome promo message when button is clicked
-function showPromo() {
-    alert("Welcome! Use code 'FIRST10' for a 10% discount on your first service.");
+// Show discount popup for first-time users
+window.onload = function () {
+  if (!localStorage.getItem('visited')) {
+    localStorage.setItem('visited', 'true');
+    alert("Welcome! As a first-time user, you get a 10% discount on your first purchase!");
   }
-  
-  // Apply promo code and display result
-  function applyPromo() {
-    const promoCode = document.getElementById("promoCode").value;
-    const promoResult = document.getElementById("promoResult");
-  
-    if (promoCode === "FIRST10") {
-      promoResult.textContent = "Promo code applied! You get a 10% discount.";
-    } else {
-      promoResult.textContent = "Invalid promo code. Please try again.";
-    }
+};
+
+// Simple form validation
+document.querySelector('.wishlist-form').onsubmit = function (event) {
+  const emailInput = document.getElementById('email').value.trim();
+  const notificationChecked = document.getElementById('notification').checked;
+
+  if (!emailInput) {
+    alert("Please enter your email.");
+    event.preventDefault();
+    return false;
   }
-  
+
+  if (!notificationChecked) {
+    alert("You must agree to receive notifications to join the wishlist.");
+    event.preventDefault();
+    return false;
+  }
+
+  alert("Thank you for joining the wishlist!");
+};
+document.querySelector('.wishlist-form').onsubmit = function (event) {
+  const emailInput = document.getElementById('email').value.trim();
+  const notificationChecked = document.getElementById('notification').checked;
+
+  if (!emailInput) {
+    alert("Please enter your email.");
+    event.preventDefault();
+    return false;
+  }
+
+  if (!notificationChecked) {
+    alert("You must agree to receive notifications to join the wishlist.");
+    event.preventDefault();
+    return false;
+  }
+
+  // Redirect to the success page
+  window.location.href = "wishlist-success.html";
+};
+function applyPromo() {
+  const promoCode = document.getElementById('promo-code').value.trim();
+  const promoMessage = document.getElementById('promo-message');
+
+  if (promoCode === "WELCOME10") {
+      promoMessage.textContent = "Promo code applied! You get 10% off.";
+  } else if (promoCode === "") {
+      promoMessage.textContent = "Please enter a promo code.";
+  } else {
+      promoMessage.textContent = "Invalid promo code. Please try again.";
+  }
+}
