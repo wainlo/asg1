@@ -808,3 +808,14 @@ footer {
 .contact-info p {
     font-size: 1rem;
 }
+.package-item img {
+    width: 100%; /* Make the image fit the container width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Optional: Restrict the height to ensure uniformity */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    object-fit: cover; /* Ensures the image fills the container nicely */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+
