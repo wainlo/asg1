@@ -66,60 +66,62 @@ nav {
     opacity: 0;
     animation: slideUpText 0.8s ease-out 0.2s forwards;
 }
+/* Make sure form groups take the full width */
 .wishlist-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5vw;
+    gap: 15px; /* Spacing between form elements */
 }
 
+/* Style for email input */
 .email-group {
-    transform: translateY(15px);
-    opacity: 0;
-    animation: slideUpForm 0.6s ease-out 0.4s forwards;
-}
-
-.email-group label {
-    display: block;
-    font-size: 1.1vw;
-    margin-bottom: 0.5rem;
-}
-
-#email {
-    width: 78%;
-    height: 43px;
-    padding: 0 1rem;
-    border: 1px solid #000000;
-    border-radius: 7px;
-}
-
-.notification-group {
     display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    font-size: 0.85vw;
-    transform: translateY(15px);
-    opacity: 0;
-    animation: slideUpForm 0.6s ease-out 0.6s forwards;
+    flex-direction: column;
+    gap: 5px;
 }
 
+/* Style for the notification checkbox and label */
+.notification-group {
+    display: flex;                
+    align-items: center;          
+    gap: 10px;                    
+}
+
+/* Style for checkbox */
+.notification-group input[type="checkbox"] {
+    margin: 0;                    
+    width: 20px;                  
+    height: 20px;                 
+}
+
+/* Ensure label wraps text properly */
+.notification-group label {
+    display: inline-block;
+    max-width: 100%;               
+    word-wrap: break-word;        
+}
+
+
+
+/* Style for the button */
 .confirm-button {
-    height: 45px;
-    width: 85%;
-    background-color: #6762FF;
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #4caf50;
     color: white;
-    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    font-size: 16px;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    transform: translateY(15px);
-    opacity: 0;
-    animation: slideUpForm 0.6s ease-out 0.8s forwards;
 }
 
 .confirm-button:hover {
-    background-color: #5f5bda;
+    background-color: #45a049;
 }
+
+
+
 
 .divider-group {
     display: flex;
@@ -610,7 +612,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .packages-heading {
-    margin-top: 3rem; /* Moves the heading down */
+    margin-top: 5rem; /* Moves the heading down */
     text-align: center; /* Keeps it centered */
     font-size: 2rem; /* Optional: Adjust the size */
     font-weight: bold; /* Optional: Keep it bold */
@@ -714,7 +716,7 @@ footer {
 .study-resources-heading {
     font-size: 2.5rem;
     color: #4CAF50;
-    margin-bottom: 10px;
+    margin-top: 5rem
 }
 
 .study-resources-subheading {
@@ -847,93 +849,219 @@ nav {
     text-decoration: underline;
 }
 
-/* Payment Section */
-.payment-section {
-    background-color: #fff;
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.payment-heading {
+/* Navigation */
+nav {
+    background-color: #004080;
+    padding: 1rem;
     text-align: center;
-    color: #4CAF50;
-    margin-bottom: 20px;
-    font-size: 24px;
+}
+
+.nav-btn a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-btn a:hover {
+    text-decoration: underline;
+}
+
+/* Payment Section */
+.payment-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 2rem; 
+    text-align: center;
 }
 
 .payment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 1rem;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
-.form-group label {
+label {
+    display: block;
+    margin-bottom: 0.5rem;
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
 }
 
-.form-group input {
-    padding: 10px;
+input, select {
+    width: 100%;
+    padding: 0.8rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    border-color: #004080;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
 }
 
 .form-footer {
     text-align: center;
-    margin-bottom: 90px;
 }
 
-.submit-button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
+.submit-payment {
+    background-color: #004080;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-    background-color: #45a049;
+.submit-payment:hover {
+    background-color: #003060;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
 }
-
-footer .contact-info h3 {
-    margin-bottom: 10px;
-}
-
-footer .contact-info p {
-    margin: 5px 0;
-}
-/* Dropdown Styling */
-select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+.back-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    background-color: #fff;
-    color: #333;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
 }
 
-select:focus {
-    border-color: #4CAF50;
-    outline: none;
-    box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+.back-button:hover {
+    background-color: #0056b3;
+}
+/* Global Styles */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7ff; /* Light background color */
+    color: #142261; /* Dark blue text for readability */
+}
+
+h1, h2 {
+    color: #8458ff; /* Purple for headings */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50; /* Green for links and buttons */
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff; /* White background for header */
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #444; /* Dark gray for paragraph */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+}
+
+.highlights {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlights h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #142261;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
 }

@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Success</title>
     <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #28a745;
+            --accent-color: #ffc107;
+            --background-color: #f8f9fa;
+            --text-color: #212529;
+        }
+
         body {
             font-family: 'Noto Sans', sans-serif;
             background-color: var(--background-color);
@@ -24,7 +32,11 @@
             color: var(--accent-color);
         }
 
-        .back-home-button {
+        .button-container {
+            margin-top: 2rem;
+        }
+
+        .nav-button {
             background-color: var(--primary-color);
             color: #ffffff;
             border: none;
@@ -32,12 +44,12 @@
             border-radius: 5px;
             text-decoration: none;
             display: inline-block;
-            margin-top: 2rem;
+            margin: 0.5rem;
             transition: background-color 0.3s ease;
         }
 
-        .back-home-button:hover {
-            background-color: darken(var(--primary-color), 10%);
+        .nav-button:hover {
+            background-color: #0056b3; /* Slightly darker blue */
         }
     </style>
 </head>
@@ -45,7 +57,10 @@
     <div>
         <span class="success-icon">✔️</span>
         <p class="success-message">Payment Successful!</p>
-        <a href="index.html" class="back-home-button">Go Back Home</a> <!-- Replace 'index.html' with your home page -->
+        <div class="button-container">
+            <a href="index.html" class="nav-button">Go Back Home</a>
+            <a href="payment.html" class="nav-button">Make Another Payment</a> <!-- Link to payment page -->
+        </div>
     </div>
 </body>
 </html>

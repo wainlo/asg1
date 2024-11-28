@@ -40,9 +40,4 @@ function applyPromo() {
     promoMessage.textContent = "Invalid promo code. Please try again.";
   }
 }
-<script>
-document.getElementById("submitPaymentButton").addEventListener("click", function() {
-    // Redirect to the success page
-    window.location.href = "success.html"// Replace 'success.html' with your actual success page URL
-});
-</script>
+
