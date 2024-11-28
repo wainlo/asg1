@@ -88,8 +88,8 @@ nav {
     width: 78%;
     height: 43px;
     padding: 0 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #000000;
+    border-radius: 7px;
 }
 
 .notification-group {
@@ -139,23 +139,6 @@ nav {
     height: 1px;
 }
 
-#google-signup {
-    width: 85%;
-    height: 3vw;
-    font-size: 1.3vw;
-    color: black;
-    background-color: white;
-    border: 1px black solid;
-    border-radius: 100vw;
-    transform: translateY(15px);
-    opacity: 0;
-    animation: slideUpForm 0.6s ease-out 1.2s forwards;
-}
-
-#google-signup img {
-    width: 1.2vw;
-    margin-right: 0.5vw;
-}
 
 .all-in-one-section {
     display: flex;
