@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .success-message {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: var(--accent-color);
+        }
+
+        .back-home-button {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home-button:hover {
+            background-color: darken(var(--primary-color), 10%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="success-icon">✔️</span>
+        <p class="success-message">Payment Successful!</p>
+        <a href="index.html" class="back-home-button">Go Back Home</a> <!-- Replace 'index.html' with your home page -->
+    </div>
+</body>
+</html>
