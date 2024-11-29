@@ -241,6 +241,7 @@ nav {
 }
 
 /* Add new animation for form elements */
+/* Keyframes */
 @keyframes slideUpForm {
     0% {
         transform: translateY(15px);
@@ -251,6 +252,16 @@ nav {
         opacity: 1;
     }
 }
+
+/* Apply animation to form */
+.wishlist-form {
+    animation: slideUpForm 0.8s ease-in-out forwards;
+    opacity: 0; /* Initial state */
+    transform: translateY(15px); /* Start position */
+}
+
+
+
 
 /* Large screens (1200px and up) */
 @media (min-width: 1200px) {
@@ -447,7 +458,7 @@ nav {
 .success-content h1 {
     font-size: 3rem;
     color: #8458ff;
-    margin-bottom: 1rem;
+    margin-top: 7rem;
 }
 
 .success-content p {
@@ -1154,11 +1165,11 @@ main {
 }
 
 .image-placeholder {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
+    width: 600px;
+    height: 700px;
+    object-fit: fill;
     border: 3px solid #8458ff; /* Purple border for the images */
-    border-radius: 8px;
+    border-radius: 18px;
 }
 
 .back-button {
