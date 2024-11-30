@@ -1779,3 +1779,166 @@ footer a {
     border-color: #00796b; /* Darker teal border on hover */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for hover effect */
 }
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .wishlist-section {
+        display: flex;
+        gap: 6vw;
+        padding: 2rem 4rem;
+    }
+    
+    .wishlist-title h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) {
+    .nav-btn {
+        padding: 1rem 2rem;
+    }
+    
+    .wishlist-section {
+        display: flex;
+        gap: 4vw;
+        flex-wrap: wrap;
+        min-height: 85vh;
+        padding: 4rem 2rem;
+    }
+
+    .wishlist-title h1 {
+        font-size: 3rem;
+    }
+
+    .wishlist-section img {
+        width: 40%;
+    }
+}
+
+/* Tablets and smaller screens (768px and down) */
+@media (max-width: 768px) {
+    .nav-btn {
+        padding: 1rem;
+    }
+
+    .nav-btn a {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+    }
+
+    .wishlist-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem 1.5rem;
+    }
+
+    .wishlist-section img {
+        width: 80%;
+        max-width: 350px;
+    }
+
+    .wishlist-content {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .wishlist-title h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .wishlist-title p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .email-group label {
+        font-size: 1rem;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    .notification-group {
+        font-size: 0.9rem;
+    }
+
+    .confirm-button, #google-signup {
+        width: 100%;
+    }
+
+    #google-signup {
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    #google-signup img {
+        width: 20px;
+    }
+}
+
+/* Mobile screens (480px and down) */
+@media (max-width: 480px) {
+    .nav-btn {
+        padding: 0.8rem;
+    }
+
+    .nav-btn a {
+        font-size: 0.8rem;
+        margin: 0 0.3rem;
+    }
+
+    .wishlist-section {
+        padding: 4rem 1rem;
+    }
+
+    .wishlist-section img {
+        width: 100%;
+    }
+
+    .wishlist-title h1 {
+        font-size: 2rem;
+    }
+
+    .wishlist-title p {
+        font-size: 0.9rem;
+    }
+
+    .email-group label {
+        font-size: 0.9rem;
+    }
+
+    .notification-group, .divider-group {
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape orientation on mobile (max-height: 600px) */
+@media (max-height: 600px) and (orientation: landscape) {
+    .wishlist-section {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .wishlist-section img {
+        width: 30%;
+    }
+
+    .wishlist-title h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Very small screens (360px and down) */
+@media (max-width: 360px) {
+    .nav-btn a {
+        font-size: 0.7rem;
+        margin: 0 0.2rem;
+    }
+
+    .wishlist-title h1 {
+        font-size: 1.8rem;
+    }
+}
