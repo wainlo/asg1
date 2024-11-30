@@ -1675,9 +1675,10 @@ footer {
 .resource-item img[src*="bandlab.png"] {
     max-width: 250px; 
     height: auto; 
+    margin-top: 1rem;
 }
 .resource-item img[src*="soundtrap.png"] {
-    max-width: 250px;
+    max-width: 300px;
     height: auto; 
 }
 /* Contact page styles */
