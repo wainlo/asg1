@@ -4,8 +4,6 @@ MusicQuest is an innovative online platform designed to support musicians at all
 
 The platform integrates essential tools such as metronomes, backing tracks, and chord progression builders, enabling musicians to practice with precision and creativity. Furthermore, MusicQuest includes personalized courses, study guides, and a range of packages designed to cater to different learning needs. Whether you're looking to improve your technical skills, enhance your music theory knowledge, or simply find inspiration, MusicQuest is your go-to destination for everything music-related.
 
-
-
 Design Process
 The design process for MusicQuest was guided by a deep understanding of our target audience — aspiring musicians, hobbyists, and professionals — who seek both structured learning and flexible, personalized practice resources. Our primary goal was to create a platform that offers an intuitive, engaging, and accessible learning experience for musicians of all levels. From the onset, we focused on user-centered design principles, ensuring that the website would cater to the specific needs of learners looking to enhance their skills, discover new resources, and engage with a supportive music community.
 
@@ -14,8 +12,10 @@ Our users aim to achieve a higher level of proficiency in their chosen instrumen
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 
 As an aspiring musician, I want to improve on my music talents, so that I can perform better.
+as a beginner to music , i want to learn more instruments , so that i can have a wider range of instruments to play.
 Canva link:(https://www.figma.com/design/xWYxqPxZ6WYNvlw2fKM7ET/MusicQuest?node-id=0-1&node-type=canvas&t=tn2lHsHMMCeInHzX-0)
 
+Features:
 Wishlist Signup: Allows users to join the MusicQuest community and receive exclusive updates by entering their email and opting for notifications. This helps users stay informed about new courses, tools, and updates.
 
 wishlist success page : this page tells you whether you have signed up successfully to be in the wishlist.
