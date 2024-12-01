@@ -13,7 +13,7 @@ In particular, as part of this section we recommend that you provide a list of U
 
 As an aspiring musician, I want to improve on my music talents, so that I can perform better.
 as a beginner to music , i want to learn more instruments , so that i can have a wider range of instruments to play.
-Canva link:(https://www.figma.com/design/xWYxqPxZ6WYNvlw2fKM7ET/MusicQuest?node-id=0-1&node-type=canvas&t=tn2lHsHMMCeInHzX-0)
+Canva link:(https://www.figma.com/design/xWYxqPxZ6WYNvlw2fKM7ET/MusicQuest?node-id=0-1&node-type=canvas&t=TptKr1SXjgDVDcA1-0)
 
 Features:
 Wishlist Signup: Allows users to join the MusicQuest community and receive exclusive updates by entering their email and opting for notifications. This helps users stay informed about new courses, tools, and updates.
@@ -42,6 +42,8 @@ Service Description Pages: Each section (e.g., "Practice Tools," "Video Lessons,
 Location and Map Information: Provides an interactive map or list of MusicQuest locations around Singapore, showing users where they can find in-person support or classes. This adds an extra layer of convenience and helps build trust with the local community.
 
 Package Plans: The "Packages" section offers users a variety of subscription plans tailored to different learning needs, such as individual, group, and premium memberships. These plans give users access to exclusive content and services, making it easy for them to select the option that best suits their goals.
+
+functional cart system: allows users to buy multiple packages at once and paying them all together , the cars also displays what the user has bought and shows them the total price spent
 
 Payment Page : The payment page allows users to pay for the package they signed up for by using a form that ensures the format is correct for the details youre keying in.
 
