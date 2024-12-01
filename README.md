@@ -75,3 +75,8 @@ youtube links include:
 https://youtube.com/embed//n2z02J4fJwg?si=1LFZF3HClbkX2OoK
 https://youtube.com/embed/_VvKeiwddPI?si=khuoX31dnPizlrU6
 https://youtube.com/embed/-xZ6m1vBQg8?si=6rBUox4-VONmQW2C
+
+links to website:
+https://garagebandonpc.com/
+https://www.soundtrap.com/musicmakers?gad_source=1&gclid=CjwKCAiA6aW6BhBqEiwA6KzDc-qo7PEv8Xf9kRXaxaMNp49c37AYRGg_u5HDxnEEDI1sFdK2mSBWlxoC4bkQAvD_BwE
+https://www.bandlab.com/?lang=en
