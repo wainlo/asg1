@@ -13,14 +13,18 @@ Our users aim to achieve a higher level of proficiency in their chosen instrumen
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
+As an aspiring musician, I want to improve on my music talents, so that I can perform better.
+Canva link:(https://www.figma.com/design/xWYxqPxZ6WYNvlw2fKM7ET/MusicQuest?node-id=0-1&node-type=canvas&t=tn2lHsHMMCeInHzX-0)
 
 Wishlist Signup: Allows users to join the MusicQuest community and receive exclusive updates by entering their email and opting for notifications. This helps users stay informed about new courses, tools, and updates.
+
+wishlist success page : this page tells you whether you have signed up successfully to be in the wishlist.
 
 Study Resources: Provides access to a wide range of music-related learning materials such as video lessons, sheet music, and practice tools. Users can explore these resources to enhance their musical skills across different instruments.
 
 Promo Code Section: Enables users to apply promotional codes for discounts or special offers. By entering a valid code, users can receive discounts or free services, helping them maximize their savings.
+
+promo code success page : this page tells you whether you have applied for the promo code successfully.
 
 Practice Tools: Offers interactive tools like metronomes, backing tracks, and scale exercises. These tools help users improve their timing, creativity, and technical skills, creating a comprehensive practice environment.
 
@@ -32,11 +36,16 @@ Interactive Image Links: Users can click on images of tools like GarageBand, Sou
 
 Contact Information Section: Provides clear and accessible contact details for MusicQuest, including emails and phone numbers for teachers and support staff. This ensures users can easily reach out for assistance or inquiries.
 
+
 Service Description Pages: Each section (e.g., "Practice Tools," "Video Lessons," "Sheet Music Library") includes detailed information about the specific service. These pages help users understand how each service supports their musical development.
 
 Location and Map Information: Provides an interactive map or list of MusicQuest locations around Singapore, showing users where they can find in-person support or classes. This adds an extra layer of convenience and helps build trust with the local community.
 
 Package Plans: The "Packages" section offers users a variety of subscription plans tailored to different learning needs, such as individual, group, and premium memberships. These plans give users access to exclusive content and services, making it easy for them to select the option that best suits their goals.
+
+Payment Page : The payment page allows users to pay for the package they signed up for by using a form that ensures the format is correct for the details youre keying in.
+
+payment success page: this page tells you whether your payment has gone through successfully
 
 About Us : The "About Us" section explains the bacstory of out company as well as our mission , growth and values . It also contains students' testimonials to further prove why MusicQuest is the right place for you
 
@@ -62,4 +71,7 @@ The MusicQuest website was designed with cross-browser compatibility and respons
 
 Media
 The photos used in this site were obtained from google as well as from official websites such as garageband , soundtrap and bandlab
-
+youtube links include: 
+https://youtube.com/embed//n2z02J4fJwg?si=1LFZF3HClbkX2OoK
+https://youtube.com/embed/_VvKeiwddPI?si=khuoX31dnPizlrU6
+https://youtube.com/embed/-xZ6m1vBQg8?si=6rBUox4-VONmQW2C
