@@ -1942,3 +1942,61 @@ footer a {
         font-size: 1.8rem;
     }
 }
+
+/* Cart Section */
+.cart-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-item {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.cart-section {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.checkout-button {
+    display: inline-block;
+    text-align: center;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    font-size: 16px; /* Font size */
+    font-weight: bold;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.checkout-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+.checkout-button:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: scale(0.95); /* Slightly shrink on click */
+}

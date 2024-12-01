@@ -26,7 +26,7 @@
     
         <div class="packages-list">
             <div class="package-item">
-                <img src="images/Child.webp " alt="Basic Package">
+                <img src="images/Child.webp" alt="Basic Package">
                 <h3>Basic Package</h3>
                 <p>Get access to essential learning resources and guides. Perfect for beginners who want to start learning.</p>
                 <ul>
@@ -36,7 +36,7 @@
                 </ul>
                 <div class="package-footer">
                     <span class="price">$19.99/month</span>
-                    <button class="buy-button" onclick="redirectToPayment('Basic Package')">Buy Now</button>
+                    <button class="cart-button" data-package="Basic Package">Add to Cart</button>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
                 </ul>
                 <div class="package-footer">
                     <span class="price">$39.99/month</span>
-                    <button class="buy-button" onclick="redirectToPayment('Standard Package')">Buy Now</button>
+                    <button class="cart-button" data-package="Standard Package">Add to Cart</button>
                 </div>
             </div>
 
@@ -66,10 +66,24 @@
                 </ul>
                 <div class="package-footer">
                     <span class="price">$59.99/month</span>
-                    <button class="buy-button" onclick="redirectToPayment('Premium Package')">Buy Now</button>
+                    <button class="cart-button" data-package="Premium Package">Add to Cart</button>
                 </div>
             </div>
         </div>
+
+        <!-- Cart Section -->
+        
+<div class="cart-section">
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-content"></div>
+        <p class="cart-total">Total: $0.00</p>
+        <a class="checkout-button">Checkout</a>
+        
+    </div>
+    
+</div>
+
     </section>
 
     <!-- Footer -->
@@ -81,11 +95,6 @@
         </div>
     </footer>
 
-    <script>
-        function redirectToPayment(packageName) {
-            const url = `payment.html?package=${encodeURIComponent(packageName)}`;
-            window.location.href = url;
-        }
-    </script>
+    <script src="package.js"></script>
 </body>
 </html>
