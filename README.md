@@ -13,7 +13,7 @@ In particular, as part of this section we recommend that you provide a list of U
 
 As an aspiring musician, I want to improve on my music talents, so that I can perform better.
 as a beginner to music , i want to learn more instruments , so that i can have a wider range of instruments to play.
-Canva link:(https://www.figma.com/design/xWYxqPxZ6WYNvlw2fKM7ET/MusicQuest?node-id=0-1&node-type=canvas&t=TptKr1SXjgDVDcA1-0)
+Canva link:(https://www.figma.com/design/xWYxqPxZ6WYNvlw2fKM7ET/ID_S10265915_WaineLow_Assg1_wireframe?node-id=0-1&node-type=canvas&t=k2LbXNsPZhQfh2Xi-0)
 
 Features:
 Wishlist Signup: Allows users to join the MusicQuest community and receive exclusive updates by entering their email and opting for notifications. This helps users stay informed about new courses, tools, and updates.
