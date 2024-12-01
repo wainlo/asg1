@@ -24,19 +24,30 @@ function updateCartDisplay() {
 
     // Display each item in the cart
     let totalPrice = 0;
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         totalPrice += item.price;
+
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
         cartItem.innerHTML = `
             <span>${item.name}</span>
             <span>$${item.price.toFixed(2)}</span>
+            <button class="remove-button" data-index="${index}">Remove</button>
         `;
         cartContent.appendChild(cartItem);
     });
 
     // Update total price
     cartTotalElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+
+    // Add event listeners to "Remove" buttons
+    document.querySelectorAll('.remove-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const index = button.getAttribute('data-index');
+            cart.splice(index, 1); // Remove the item from the cart array
+            updateCartDisplay(); // Refresh the cart display
+        });
+    });
 }
 
 // Checkout button event
@@ -46,7 +57,7 @@ document.querySelector('.checkout-button').addEventListener('click', () => {
     } else {
         // Save the cart data to localStorage
         localStorage.setItem('cart', JSON.stringify(cart));
-        
+
         // Redirect to the payment page
         window.location.href = 'payment.html';
     }
